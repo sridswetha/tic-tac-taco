@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomakh&display=swap');
+
+.container{
+    text-align: center;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the top */
+    height: 100%;  /* Ensure the container takes up full height */
+    flex-grow: 1;  /* Make the game board grow to take available space */
+}
+
+
+.title {
+    margin-top: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Add shadow to text */
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Monomakh", serif; /* Apply the font */
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;  /* Horizontally center the buttons */
+    gap: 20px;  /* Adds space between the two buttons */
+    margin-top: -20px; /* Reduced the space between the title and buttons */
+    margin-bottom: 20px; /* Space before the board starts */
+}
+.one, .multi {
+    width: 200px;
+    height: 80px;
+    border: none;
+    outline: none; 
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    font-family: "Monomakh", serif; /* Apply the font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  /* Add shadow to text */
+}
+
+.one {
+    background: rgb(112, 255, 198);
+}
+
+.multi {
+    background: rgb(187, 255, 91);
+}
+
+.reset {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  /* Add shadow to text */
+    width: 200px;
+    height: 80px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: rgb(223, 188, 227);
+    font-size: 26px;
+    color: black;
+    font-family: "Monomakh", serif; /* Apply the font */
+    margin-top: 20px;  /* Pushes reset button to the bottom */
+    margin-bottom: 50px; /* Adjust space from bottom */
+}
+
+.board { 
+    height: 400px;
+    width: 384px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Centers the board */
+    align-items: center;
+    margin: auto;
+    margin-top: 0px;  
+
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;  /* Centers vertically */
+    height: 120px;
+    width: 120px;
+    background: #ec65e3;
+    border: 4px solid #ff00ae;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.boxes img {
+    margin: 50px 50px;
+    height: 60px;
+}
+.title img {
+    padding: 10px;
+    height: 60px; /* Adjusted to make the images smaller */
+}
+
+/* disable scrolling */
+html, body {
+    overflow: hidden;
+  }
+  
