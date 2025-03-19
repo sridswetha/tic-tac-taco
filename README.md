@@ -1,5 +1,6 @@
 ## Tic-Tac-Taco
 A taco themed twist on the classic game featuring single player and multiplayer options! 
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Accessing the Game!
